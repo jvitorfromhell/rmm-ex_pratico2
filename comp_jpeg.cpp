@@ -19,18 +19,6 @@
  * 	
  * */
 
-#ifndef JO_INCLUDE_JPEG_H
-#define JO_INCLUDE_JPEG_H
-
-// To get a header file for this, either cut and paste the header,
-// or create jo_jpeg.h, #define JO_JPEG_HEADER_FILE_ONLY, and
-// then include jo_jpeg.c from it.
-
-// Returns false on failure
-extern bool jo_write_jpg(const char *filename, const void *data, int width, int height, int comp, int quality);
-
-#endif // JO_INCLUDE_JPEG_H
-
 #ifndef JO_JPEG_HEADER_FILE_ONLY
 
 #if defined(_MSC_VER) && _MSC_VER >= 0x1400
@@ -40,6 +28,7 @@ extern bool jo_write_jpg(const char *filename, const void *data, int width, int 
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include "bib.h"
 
 static const unsigned char s_jo_ZigZag[] = { 0,1,5,6,14,15,27,28,2,4,7,13,16,26,29,42,3,8,12,17,25,30,41,43,9,11,18,24,31,40,44,53,10,19,23,32,39,45,52,54,20,22,33,38,46,51,55,60,21,34,37,47,50,56,59,61,35,36,48,49,57,58,62,63 };
 
