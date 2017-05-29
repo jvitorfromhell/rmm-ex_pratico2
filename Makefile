@@ -13,3 +13,4 @@ limpa:
 	rm descomp
 	rm lena.jpg
 	rm residuo.raw
+	rm novaLena.raw
