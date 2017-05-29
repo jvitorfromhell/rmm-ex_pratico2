@@ -4,7 +4,7 @@
 using namespace std;
 
 bool despredificar(string filename) {
-
+    return true;
 }
 
 int main() {
