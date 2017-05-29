@@ -11,3 +11,5 @@ descomprime:
 limpa:
 	rm comp
 	rm descomp
+	rm lena.jpg
+	rm residuo.raw
